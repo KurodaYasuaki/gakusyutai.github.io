@@ -1,0 +1,104 @@
+body{
+  background-color: white;
+  color: black;
+  font-family:'メイリオ';
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.title{ /*imgで全ての画像を、iframeで埋め込んだ全ての動画を指定できる */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /*height: 60px;*/
+}
+
+/*楽習隊アイコンのサイズ変更*/
+.title img{ 
+  width: 150px;
+}
+
+img{
+    width: 150px;
+}
+
+/*ヘッダー用に限る、リンク表示はヘッダー以外はさらに変更要るかも*/
+header a{
+  color:black ; /*デフォルトで青字なのを黒字に変更*/
+  text-decoration: none ; /*デフォルトでつく下線を削除*/
+}
+
+a:hover{ /*文字列の上にポインタを置いた場合をホバーという*/
+  opacity: .5; /*ホバー状態で透明度50%*/
+}
+
+
+.container ul { /*複数の画像を横並びで表示*/
+display: flex;
+list-style: none;
+}
+
+.sns-navi ul { /*複数の画像を横並びで表示*/
+  display: flex;
+  list-style: none;
+}
+
+li:nth-child(2) {
+  margin: 0 10px;
+}
+
+#rounded img{ /*画像の角に丸みを持たせる*/
+    border-radius: 10px;
+}
+
+.content{
+  margin: 0px;
+  padding: 0px 80px;
+}
+
+.subtitle{ /*謹賀新年などのサブタイトル*/
+    text-align: center;
+}
+
+h1{
+  text-align:center;
+  color: orange;
+  /*height:60px;*/ /*要らない*/
+  line-height:60px;
+  font-size: 25px;
+}
+
+/*container全体にかかる*/
+.container{ 
+  font-size: 22px; /*18pxくらい*/
+  display: flex;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.container li{ /*containerのそれぞれにかかる*/
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0 10px; /*2つ目の値で要素の間隔を規定*/
+  margin-left: 20px;
+}
+
+/*2/9追加分（そーちゃん）*/
+.thumbnail{
+  height: 400px;
+  width: 800px;
+  text-align: center;
+  margin:0 300px;
+  
+}
+
+.thumbnail img{
+  height: 100%;
+  width: 100%;
+}
+/*追加分終了*/
+
