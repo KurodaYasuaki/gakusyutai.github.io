@@ -92,8 +92,7 @@ h1{
   height: 400px;
   width: 800px;
   text-align: center;
-  margin:0 300px;
-  
+  margin:0px; /*bodyの余白に合わせれば両端の余白生まれるので 0px でOK*/  
 }
 
 .thumbnail img{
